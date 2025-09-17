@@ -3,16 +3,22 @@ import SohagCourierLogo from "../SohagCourierLogo/SohagCourierLogo";
 
 const Footer = () => {
     return (
-        <footer className="footer footer-horizontal footer-center bg-neutral text-neutral-content p-10">
+        <footer className="footer footer-horizontal footer-center rounded-2xl bg-neutral text-neutral-content p-10">
             <aside>
                 <SohagCourierLogo></SohagCourierLogo>
                 <p className="font-bold">
-                    ACME Industries Ltd.
-                    <br />
-                    Providing reliable tech since 1992
+
+                    Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to <br /> business shipments — we deliver on time, every time.
                 </p>
-                <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+
+                <p className="mt-4">Copyright © {new Date().getFullYear()} - All right reserved</p>
             </aside>
+            <nav className="grid grid-flow-col gap-4">
+                <a className="link link-hover">About us</a>
+                <a className="link link-hover">Contact</a>
+                <a className="link link-hover">Jobs</a>
+                <a className="link link-hover">Press kit</a>
+            </nav>
             <nav>
                 <div className="grid grid-flow-col gap-4">
                     <a>
