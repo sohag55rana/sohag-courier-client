@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import SohagCourierLogo from '../SohagCourierLogo/SohagCourierLogo';
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
                         {navItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl"><SohagCourierLogo></SohagCourierLogo></a>
+                <Link to="/" className="btn btn-ghost text-xl"><SohagCourierLogo></SohagCourierLogo></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <Link to={"/login"} className='btn btn-secondary'>Login</Link>
             </div>
         </div>
     );

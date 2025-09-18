@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 AOS.init();
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className="urbanist-font container mx-auto px-8 bg-[#eaeced]">
+    <div className="urbanist-font container mx-auto px-8 ">
       <RouterProvider router={router} />
     </div>
   </StrictMode>,
