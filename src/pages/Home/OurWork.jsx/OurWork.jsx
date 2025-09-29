@@ -22,35 +22,39 @@ const OurWork = () => {
   ];
 
   return (
-    <section className="mt-20">
-      <div className="mx-auto">
-        {/* 3 Cards */}
-        <div className="w-full mx-auto p-8 space-y-8">
-          {works.map((work, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-xl p-6 flex items-center"
-            >
-              {/* Left - Img */}
-              <img
-                src={work.img}
-                alt={work.title}
-                className="w-[200px] h-[200px] object-cover rounded-lg"
-              />
+    <div>
+      <div className="border-b-2 border-dashed border-gray-400 my-20"></div>
+      <section>
+        <div className="mx-auto">
+          {/* 3 Cards */}
+          <div className="w-full mx-auto space-y-8">
+            {works.map((work, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-md rounded-xl p-6 flex items-center"
+              >
+                {/* Left - Img */}
+                <img
+                  src={work.img}
+                  alt={work.title}
+                  className="w-[200px] h-[200px] object-cover rounded-lg"
+                />
 
-              {/* Middle - Dashed Border */}
-              <div className="border-l-3 border-dashed border-gray-400 h-32 mx-12"></div>
+                {/* Middle - Dashed Border */}
+                <div className="border-l-3 border-dashed border-gray-400 h-32 mx-12"></div>
 
-              {/* Right - Text */}
-              <div>
-                <h3 className="text-2xl font-semibold">{work.title}</h3>
-                <p className="text-gray-600 text-xl">{work.desc}</p>
+                {/* Right - Text */}
+                <div>
+                  <h3 className="text-2xl font-semibold">{work.title}</h3>
+                  <p className="text-gray-600 text-xl">{work.desc}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <div className="border-b-2 border-dashed border-gray-400 my-20"></div>
+    </div>
   );
 };
 
