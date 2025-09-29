@@ -48,14 +48,14 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="py-16 bg-base-100">
+    <section className="rounded-2xl py-16 mt-16 bg-[#03373d]">
       <div className="max-w-6xl mx-auto px-4">
         {/* Title & Description */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
             Our Services
           </h2>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-white max-w-2xl mx-auto">
             Enjoy fast, reliable parcel delivery with real-time tracking and
             zero hassle. From personal packages to business shipments — we
             deliver on time, every time.
