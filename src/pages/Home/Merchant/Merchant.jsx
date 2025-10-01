@@ -5,7 +5,7 @@ const Merchant = () => {
     return (
         <div data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" className="bg-[url('assets/be-a-merchant-bg.png')] bg-no-repeat flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-16 py-12 text-white rounded-2xl bg-[#03373d] mb-14 ">
+            data-aos-duration="3000" className="bg-[url('assets/be-a-merchant-bg.png')] bg-no-repeat flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-16 py-12 text-white rounded-2xl bg-[#03373d] mb-14 ">
             {/* Left Section */}
             <div className="flex-1 space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-white">
