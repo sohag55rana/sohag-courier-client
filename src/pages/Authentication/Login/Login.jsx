@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { Link } from "react-router";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const {
@@ -15,6 +16,7 @@ const Login = () => {
   return (
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
       <div className="card-body ">
+        <h1 className="text-4xl font-bold">Login now!</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <label className="label">Email</label>
           <input
@@ -57,6 +59,7 @@ const Login = () => {
           </Link>{" "}
         </p>
       </div>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };
